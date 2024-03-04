@@ -176,24 +176,22 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: Ready, Set, , key: 1c0d715f'
-            label: Text
-            name: 1c0d715f
-            widget: string
-          - hint: 'Original text: Xike!, key: 5096d56'
-            label: Text
-            name: 5096d56
-            widget: string
-          - hint: >-
-              Original text:  Turn Your Followers into Your Fortune. Landing
-              Soon!, key: -525a87f4
-            label: Text
-            name: '-525a87f4'
-            widget: string
           - hint: 'Original text: On your Marks, key: -76cd2246'
             label: Text
             name: '-76cd2246'
             widget: string
+          - hint: 'Original text: Ready, Set, , key: 1c0d715f'
+            label: Text
+            name: 1c0d715f
+            widget: string
+          - hint: 'Original text: Xike..., key: -179c599d'
+            label: Text
+            name: '-179c599d'
+            widget: string
+          - hint: "Original text:  where content trumps follower count and earns you more than just likes. Xike - Influence meets\_innovation\", key: -5ca73f41"
+            label: Text
+            name: '-5ca73f41'
+            widget: text
           - hint: 'Original text: Count Me in, key: 7d14461c'
             label: Text
             name: 7d14461c
@@ -218,19 +216,6 @@ collections:
             name: title
             widget: hidden
             default: Images
-          - label: Image
-            name: 732f3faa
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
           - label: Image
             name: 62ec0c4f
             widget: object
@@ -258,7 +243,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-35e191fd'
+            name: '-2c3aeb9d'
             widget: object
             fields:
               - name: url

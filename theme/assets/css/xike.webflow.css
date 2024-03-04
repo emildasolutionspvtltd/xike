@@ -24,10 +24,7 @@
 
 .coming_soon_hero_section {
   height: 100vh;
-  background-image: var(--image-732f3faa);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -46,9 +43,9 @@
   color: var(--white);
   margin-top: 10px;
   font-family: Bebas Neue, sans-serif;
-  font-size: 128px;
+  font-size: 70px;
   font-weight: 400;
-  line-height: 140px;
+  line-height: 91px;
 }
 
 .cs_hero_wrap {
@@ -60,11 +57,11 @@
   color: #ff2915;
   margin-top: 10px;
   font-family: Space Grotesk, sans-serif;
-  font-size: 72px;
+  font-size: 42px;
   font-weight: 400;
-  line-height: 100.8px;
+  line-height: 70px;
   position: absolute;
-  top: -14%;
+  top: -13%;
   bottom: auto;
   left: 0%;
   right: auto;
@@ -79,8 +76,9 @@
 }
 
 .xike_logo {
-  width: 290px;
-  height: 290px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   position: absolute;
   top: 3%;
   bottom: auto;
@@ -89,8 +87,8 @@
 }
 
 .girl_image {
-  width: 300px;
-  height: 410px;
+  width: auto;
+  height: 340px;
   object-fit: cover;
   position: absolute;
   top: auto;
@@ -108,8 +106,8 @@
   justify-content: center;
   align-items: center;
   font-family: Bebas Neue, sans-serif;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 50px;
   transition: color .4s cubic-bezier(.25, .46, .45, .94), border-color .4s cubic-bezier(.25, .46, .45, .94), background-color .4s cubic-bezier(.25, .46, .45, .94);
   display: flex;
 }
@@ -127,7 +125,7 @@
 
 .style_txt {
   background-image: var(--image-62ec0c4f);
-  background-position: 50% 70%;
+  background-position: 0 88%;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -161,6 +159,43 @@
   overflow: hidden;
 }
 
+.cs_hero_style_txt_mobile {
+  color: #ff2915;
+  margin-top: 10px;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 100.8px;
+  display: none;
+  position: absolute;
+  top: -14%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+  transform: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .cs_header {
+    font-size: 82px;
+    line-height: 106.6px;
+  }
+
+  .xike_logo {
+    width: 240px;
+    height: 240px;
+  }
+
+  .girl_image {
+    height: 380px;
+  }
+
+  .xike_button {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .coming_soon_hero_section {
     margin-left: auto;
@@ -175,15 +210,14 @@
   }
 
   .cs_header {
-    font-size: 80px;
-    line-height: 104px;
+    font-size: 48px;
+    line-height: 68px;
   }
 
   .cs_hero_style_txt {
-    font-size: 45px;
-    line-height: 58.5px;
-    top: -14%;
-    left: -1%;
+    font-size: 35px;
+    line-height: 42px;
+    top: -12%;
   }
 
   .text-span {
@@ -199,7 +233,7 @@
   }
 
   .girl_image {
-    width: 240px;
+    width: auto;
     height: 300px;
     object-fit: cover;
   }
@@ -216,6 +250,13 @@
     height: 150px;
     object-fit: cover;
   }
+
+  .cs_hero_style_txt_mobile {
+    font-size: 45px;
+    line-height: 58.5px;
+    top: -14%;
+    left: -1%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -228,27 +269,30 @@
   .coming_soon_container {
     justify-content: center;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
   }
 
   .cs_header {
     text-align: center;
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 34px;
+    line-height: 48px;
   }
 
   .cs_hero_wrap {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 0;
     display: flex;
   }
 
   .cs_hero_style_txt {
-    font-size: 35px;
-    line-height: 45.5px;
-    top: -12%;
+    font-size: 30px;
+    line-height: 39px;
+    top: -14%;
     left: auto;
   }
 
@@ -260,9 +304,10 @@
   }
 
   .girl_image {
-    width: 200px;
+    width: auto;
     height: 260px;
     object-fit: cover;
+    position: static;
   }
 
   .xike_button {
@@ -273,8 +318,8 @@
   }
 
   .xike_logo_mobile {
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     position: static;
   }
@@ -289,6 +334,13 @@
     object-fit: cover;
     position: relative;
   }
+
+  .cs_hero_style_txt_mobile {
+    font-size: 35px;
+    line-height: 45.5px;
+    top: -12%;
+    left: auto;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -298,15 +350,17 @@
   }
 
   .coming_soon_container {
-    margin-bottom: 190px;
+    margin-bottom: 0;
   }
 
   .cs_header {
-    font-size: 40px;
-    line-height: 54px;
+    margin-top: 0;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .cs_hero_wrap {
+    width: 100%;
     margin-bottom: 0;
   }
 
@@ -316,6 +370,8 @@
     font-size: 25px;
     font-weight: 400;
     line-height: 33px;
+    display: none;
+    position: static;
     top: -16%;
     left: auto;
     transform: none;
@@ -328,8 +384,9 @@
   }
 
   .girl_image {
-    width: 180px;
-    height: 240px;
+    width: auto;
+    height: auto;
+    position: static;
   }
 
   .xike_button {
@@ -349,6 +406,20 @@
     width: 80px;
     height: 80px;
     display: none;
+  }
+
+  .cs_hero_style_txt_mobile {
+    text-align: left;
+    margin-bottom: 0;
+    font-family: Space Grotesk, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+    position: static;
+    top: -16%;
+    left: auto;
+    transform: none;
   }
 }
 
