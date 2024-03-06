@@ -188,10 +188,16 @@ collections:
             label: Text
             name: '-179c599d'
             widget: string
-          - hint: "Original text:  where content trumps follower count and earns you more than just likes. Xike - Influence meets\_innovation\", key: -5ca73f41"
+          - hint: >-
+              Original text:  where content trumps follower count and earns you
+              more than just likes. , key: -7d4e2797
             label: Text
-            name: '-5ca73f41'
-            widget: text
+            name: '-7d4e2797'
+            widget: string
+          - hint: "Original text: \"Xike - Influence meets\_innovation\", key: -5b0045c8"
+            label: Text
+            name: '-5b0045c8'
+            widget: string
           - hint: 'Original text: Count Me in, key: 7d14461c'
             label: Text
             name: 7d14461c
@@ -243,7 +249,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-2c3aeb9d'
+            name: 4c8b11c9
             widget: object
             fields:
               - name: url

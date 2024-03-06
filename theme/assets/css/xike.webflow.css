@@ -43,9 +43,9 @@
   color: var(--white);
   margin-top: 10px;
   font-family: Bebas Neue, sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 91px;
+  line-height: 72px;
 }
 
 .cs_hero_wrap {
@@ -57,9 +57,9 @@
   color: #ff2915;
   margin-top: 10px;
   font-family: Space Grotesk, sans-serif;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 45.6px;
   position: absolute;
   top: -13%;
   bottom: auto;
@@ -88,7 +88,7 @@
 
 .girl_image {
   width: auto;
-  height: 340px;
+  height: 300px;
   object-fit: cover;
   position: absolute;
   top: auto;
@@ -177,17 +177,23 @@
 
 @media screen and (min-width: 1280px) {
   .cs_header {
-    font-size: 82px;
-    line-height: 106.6px;
+    font-size: 72px;
+    line-height: 86.4px;
+  }
+
+  .cs_hero_style_txt {
+    font-size: 42px;
+    line-height: 50.4px;
+    top: -12%;
   }
 
   .xike_logo {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
   }
 
   .girl_image {
-    height: 380px;
+    height: 340px;
   }
 
   .xike_button {
@@ -210,14 +216,14 @@
   }
 
   .cs_header {
-    font-size: 48px;
-    line-height: 68px;
+    font-size: 45px;
+    line-height: 54px;
   }
 
   .cs_hero_style_txt {
-    font-size: 35px;
-    line-height: 42px;
-    top: -12%;
+    font-size: 30px;
+    line-height: 36px;
+    top: -14%;
   }
 
   .text-span {
@@ -234,7 +240,7 @@
 
   .girl_image {
     width: auto;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
   }
 
@@ -276,8 +282,8 @@
 
   .cs_header {
     text-align: center;
-    font-size: 34px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 42px;
   }
 
   .cs_hero_wrap {
@@ -290,8 +296,8 @@
   }
 
   .cs_hero_style_txt {
-    font-size: 30px;
-    line-height: 39px;
+    font-size: 28px;
+    line-height: 33px;
     top: -14%;
     left: auto;
   }
@@ -305,7 +311,7 @@
 
   .girl_image {
     width: auto;
-    height: 260px;
+    height: 270px;
     object-fit: cover;
     position: static;
   }
@@ -318,8 +324,8 @@
   }
 
   .xike_logo_mobile {
-    width: 110px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     position: static;
   }
@@ -355,7 +361,7 @@
 
   .cs_header {
     margin-top: 0;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
   }
 
@@ -384,8 +390,10 @@
   }
 
   .girl_image {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    object-fit: cover;
     position: static;
   }
 
@@ -397,8 +405,8 @@
   }
 
   .xike_logo_mobile {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     position: static;
   }
 
@@ -412,9 +420,9 @@
     text-align: left;
     margin-bottom: 0;
     font-family: Space Grotesk, sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
     display: block;
     position: static;
     top: -16%;
