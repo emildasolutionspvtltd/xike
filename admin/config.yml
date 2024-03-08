@@ -202,23 +202,9 @@ collections:
             label: Text
             name: 7d14461c
             widget: string
-          - hint: 'Original text: Be a Part of Xike :, key: -5a679423'
-            label: Text
-            name: '-5a679423'
-            widget: string
-          - hint: 'Original text: Connect with us, key: -f38e51e'
-            label: Text
-            name: '-f38e51e'
-            widget: string
           - hint: 'Original text: Xike.in, key: -179c5238'
             label: Text
             name: '-179c5238'
-            widget: string
-          - hint: >-
-              Original text: for exclusive updates and engaging stories., key:
-              -60bd32fb
-            label: Text
-            name: '-60bd32fb'
             widget: string
       - label: Links
         name: links

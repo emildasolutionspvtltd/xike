@@ -1,6 +1,6 @@
 :root {
   --white: white;
-  --black: black;
+  --black: rgba(0, 0, 0, 0);
 }
 
 .w-layout-blockcontainer {
@@ -162,59 +162,39 @@
   position: relative;
 }
 
-.paragraph {
-  color: #fff;
-  margin-bottom: 0;
-  font-family: Avenir, sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 33.6px;
-}
-
 .social-div-2 {
+  text-align: left;
+  flex-flow: row;
+  align-items: stretch;
   display: flex;
-}
-
-.social-div-2-para-1 {
-  color: #fff;
-  margin-bottom: 0;
-  font-family: Avenir, sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 33.6px;
 }
 
 .image {
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
 }
 
-.social-link-child-2 {
+.social-link {
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 0;
   text-decoration: none;
+  transition: transform .3s cubic-bezier(.25, .46, .45, .94);
   display: flex;
+}
+
+.social-link:hover {
+  transform: scale(.95);
 }
 
 .paragraph-2 {
   color: red;
   margin-bottom: 0;
-  margin-left: 5px;
-  font-family: Avenir, sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 33.6px;
-}
-
-.social-div-2-para-2 {
-  color: #fff;
-  margin-bottom: 0;
   margin-left: 10px;
   font-family: Avenir, sans-serif;
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 500;
-  line-height: 33.6px;
+  line-height: 40.8px;
 }
 
 .social-link-child-2-tab {
@@ -249,6 +229,21 @@
   .xike_button {
     font-size: 45px;
     line-height: 55px;
+  }
+
+  .image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-link {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .paragraph-2 {
+    font-size: 38px;
   }
 }
 
@@ -291,6 +286,7 @@
   .xike_button {
     width: 200px;
     height: 60px;
+    margin-bottom: 30px;
     font-size: 31px;
     line-height: 40px;
   }
@@ -314,16 +310,6 @@
     align-items: flex-start;
   }
 
-  .social-div-1 {
-    margin-bottom: 5px;
-  }
-
-  .paragraph {
-    margin-bottom: 0;
-    font-size: 22px;
-    line-height: 26.4px;
-  }
-
   .social-div-2 {
     flex-flow: column;
     justify-content: flex-start;
@@ -335,46 +321,40 @@
     display: flex;
   }
 
-  .social-div-2-para-1 {
-    margin-bottom: 0;
-    font-size: 22px;
-    line-height: 26.4px;
-  }
-
   .image {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
 
-  .social-link-child-2 {
+  .social-link {
     margin-bottom: 5px;
     margin-left: 0;
     display: none;
   }
 
   .paragraph-2 {
-    font-size: 22px;
-    line-height: 26.4px;
-  }
-
-  .social-div-2-para-2 {
-    margin-left: 0;
-    font-size: 22px;
-    line-height: 26.4px;
+    font-size: 28px;
+    line-height: 33.6px;
   }
 
   .social-link-child-2-tab {
     margin-bottom: 0;
-    margin-left: 10px;
+    margin-left: 0;
+    transition: transform .3s cubic-bezier(.25, .46, .45, .94);
     display: flex;
+  }
+
+  .social-link-child-2-tab:hover {
+    transform: scale(.95);
   }
 }
 
 @media screen and (max-width: 767px) {
   .coming_soon_hero_section {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
   }
 
   .coming_soon_container {
@@ -403,6 +383,8 @@
   .cs_hero_style_txt {
     font-size: 28px;
     line-height: 33px;
+    display: none;
+    position: static;
     top: -14%;
     left: auto;
   }
@@ -416,8 +398,8 @@
 
   .girl_image {
     width: auto;
-    height: 270px;
-    object-fit: cover;
+    height: 300px;
+    object-fit: contain;
     position: static;
   }
 
@@ -429,9 +411,9 @@
   }
 
   .xike_logo_mobile {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
     position: static;
   }
 
@@ -440,8 +422,11 @@
   }
 
   .cs_hero_style_txt_mobile {
-    font-size: 35px;
-    line-height: 45.5px;
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 33px;
+    display: block;
+    position: static;
     top: -12%;
     left: auto;
   }
@@ -450,15 +435,6 @@
     text-align: left;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .social-div-1 {
-    margin-bottom: 5px;
-  }
-
-  .paragraph {
-    font-size: 20px;
-    line-height: 24px;
   }
 
   .social-div-2 {
@@ -470,26 +446,23 @@
     margin-bottom: 5px;
   }
 
-  .social-div-2-para-1 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
   .image {
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
   }
 
-  .paragraph-2, .social-div-2-para-2 {
-    font-size: 20px;
-    line-height: 24px;
+  .paragraph-2 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31.2px;
   }
 }
 
 @media screen and (max-width: 479px) {
   .coming_soon_hero_section {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 40px;
   }
 
   .coming_soon_container {
@@ -528,7 +501,7 @@
 
   .girl_image {
     width: 100%;
-    height: 250px;
+    height: 270px;
     max-width: 300px;
     object-fit: cover;
     position: static;
@@ -538,18 +511,20 @@
     width: 150px;
     height: 45px;
     letter-spacing: 1px;
+    margin-bottom: 20px;
     font-size: 16px;
   }
 
   .xike_logo_mobile {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
     position: static;
   }
 
   .cs_hero_style_txt_mobile {
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-family: Space Grotesk, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -561,22 +536,8 @@
     transform: none;
   }
 
-  .social-div-1 {
-    margin-bottom: 2.5px;
-  }
-
-  .paragraph {
-    font-size: 18px;
-    line-height: 21.6px;
-  }
-
   .social-div-2-child-1 {
-    margin-bottom: 2.5px;
-  }
-
-  .social-div-2-para-1 {
-    font-size: 18px;
-    line-height: 21.6px;
+    margin-bottom: 10px;
   }
 
   .image {
@@ -585,12 +546,7 @@
   }
 
   .paragraph-2 {
-    font-size: 18px;
-    line-height: 21.6px;
-  }
-
-  .social-div-2-para-2 {
-    text-align: center;
+    margin-left: 6px;
     font-size: 18px;
     line-height: 21.6px;
   }
