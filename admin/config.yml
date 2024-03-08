@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-  branch: main
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -202,6 +202,24 @@ collections:
             label: Text
             name: 7d14461c
             widget: string
+          - hint: 'Original text: Be a Part of Xike :, key: -5a679423'
+            label: Text
+            name: '-5a679423'
+            widget: string
+          - hint: 'Original text: Connect with us, key: -f38e51e'
+            label: Text
+            name: '-f38e51e'
+            widget: string
+          - hint: 'Original text: Xike.in, key: -179c5238'
+            label: Text
+            name: '-179c5238'
+            widget: string
+          - hint: >-
+              Original text: for exclusive updates and engaging stories., key:
+              -60bd32fb
+            label: Text
+            name: '-60bd32fb'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -213,6 +231,13 @@ collections:
           - hint: 'Original link: https://forms.gle/AvNhHue2K8C78njA8, key: -387c613c'
             label: Link
             name: '-387c613c'
+            widget: string
+          - hint: >-
+              Original link:
+              https://www.instagram.com/xike.in?igsh=MTN3eWpkZmk5OTZ6Zw==, key:
+              -92a17c9
+            label: Link
+            name: '-92a17c9'
             widget: string
       - label: Images
         name: images
@@ -237,6 +262,19 @@ collections:
                 required: false
           - label: Image
             name: 7d26e01b
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 57effee4
             widget: object
             fields:
               - name: url

@@ -68,13 +68,6 @@
   transform: none;
 }
 
-.text-span {
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-size: auto;
-}
-
 .xike_logo {
   width: 200px;
   height: 200px;
@@ -105,6 +98,7 @@
   background-color: #ff2915;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   font-family: Bebas Neue, sans-serif;
   font-size: 40px;
   line-height: 50px;
@@ -116,11 +110,6 @@
   background-color: var(--white);
   color: #ff2915;
   border: 2px solid #ff2915;
-}
-
-.xike {
-  z-index: 100;
-  position: relative;
 }
 
 .style_txt {
@@ -144,16 +133,6 @@
   display: none;
 }
 
-.xike_logo_mobile_landscape {
-  width: 290px;
-  height: 290px;
-  position: absolute;
-  top: 3%;
-  bottom: auto;
-  left: auto;
-  right: 3%;
-}
-
 .div-block {
   width: 100vw;
   overflow: hidden;
@@ -173,6 +152,77 @@
   left: 0%;
   right: auto;
   transform: none;
+}
+
+.social-div {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.paragraph {
+  color: #fff;
+  margin-bottom: 0;
+  font-family: Avenir, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+}
+
+.social-div-2 {
+  display: flex;
+}
+
+.social-div-2-para-1 {
+  color: #fff;
+  margin-bottom: 0;
+  font-family: Avenir, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+}
+
+.image {
+  width: 28px;
+  height: 28px;
+}
+
+.social-link-child-2 {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  text-decoration: none;
+  display: flex;
+}
+
+.paragraph-2 {
+  color: red;
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-family: Avenir, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+}
+
+.social-div-2-para-2 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-family: Avenir, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+}
+
+.social-link-child-2-tab {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  text-decoration: none;
+  display: none;
 }
 
 @media screen and (min-width: 1280px) {
@@ -226,12 +276,6 @@
     top: -14%;
   }
 
-  .text-span {
-    background-image: none;
-    background-repeat: repeat;
-    background-size: auto;
-  }
-
   .xike_logo {
     width: 150px;
     height: 150px;
@@ -251,7 +295,7 @@
     line-height: 40px;
   }
 
-  .xike_logo_mobile, .xike_logo_mobile_landscape {
+  .xike_logo_mobile {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -262,6 +306,67 @@
     line-height: 58.5px;
     top: -14%;
     left: -1%;
+  }
+
+  .social-div {
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .social-div-1 {
+    margin-bottom: 5px;
+  }
+
+  .paragraph {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .social-div-2 {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .social-div-2-child-1 {
+    margin-bottom: 5px;
+    display: flex;
+  }
+
+  .social-div-2-para-1 {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .image {
+    width: 24px;
+    height: 24px;
+  }
+
+  .social-link-child-2 {
+    margin-bottom: 5px;
+    margin-left: 0;
+    display: none;
+  }
+
+  .paragraph-2 {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .social-div-2-para-2 {
+    margin-left: 0;
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .social-link-child-2-tab {
+    margin-bottom: 0;
+    margin-left: 10px;
+    display: flex;
   }
 }
 
@@ -334,18 +439,50 @@
     display: block;
   }
 
-  .xike_logo_mobile_landscape {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    position: relative;
-  }
-
   .cs_hero_style_txt_mobile {
     font-size: 35px;
     line-height: 45.5px;
     top: -12%;
     left: auto;
+  }
+
+  .social-div {
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-div-1 {
+    margin-bottom: 5px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .social-div-2 {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .social-div-2-child-1 {
+    margin-bottom: 5px;
+  }
+
+  .social-div-2-para-1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .image {
+    width: 22px;
+    height: 22px;
+  }
+
+  .paragraph-2, .social-div-2-para-2 {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -410,12 +547,6 @@
     position: static;
   }
 
-  .xike_logo_mobile_landscape {
-    width: 80px;
-    height: 80px;
-    display: none;
-  }
-
   .cs_hero_style_txt_mobile {
     text-align: left;
     margin-bottom: 0;
@@ -429,6 +560,47 @@
     left: auto;
     transform: none;
   }
+
+  .social-div-1 {
+    margin-bottom: 2.5px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .social-div-2-child-1 {
+    margin-bottom: 2.5px;
+  }
+
+  .social-div-2-para-1 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .paragraph-2 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .social-div-2-para-2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
 }
 
 
+@font-face {
+  font-family: 'Avenir';
+  src: url("/assets/fonts/avenir-regular.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
